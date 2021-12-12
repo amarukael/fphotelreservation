@@ -1,14 +1,19 @@
 <?php
+$message = "";
 if (isset($_GET['pesan'])) {
     if ($_GET['pesan'] == "gagal") {
-        echo "Login gagal! username dan password salah!";
+        $message = "Login gagal! username dan password salah!";
     } else if ($_GET['pesan'] == "logout") {
-        echo "Anda telah berhasil logout";
+        $message = "Anda telah berhasil logout";
     } else if ($_GET['pesan'] == "belum_login") {
-        echo "Anda harus login untuk mengakses halaman admin";
+        $message = "Anda harus login untuk mengakses halaman admin";
     }
 }
 
+session_start();
+if (isset($_SESSION['status'])) {
+    header("location:/admin/index.php");
+}
 ?>
 
 <!DOCTYPE html>
@@ -23,18 +28,19 @@ if (isset($_GET['pesan'])) {
 </head>
 
 <body>
-	<div id="login-box">
-
-		<div class="left-box">
-			<h2>Selamat Datang di Admin Hotel Reservation</h2>
-			<h3>LOGIN As ADMIN</h3>
-			<form action="val-login.php" method="POST">
-				<input type="text" name="username" placeholder="Username" />
-				<input type="password" name="password" placeholder="Password" />
-				<center><input type="submit" name="login button" value="LOGIN" />
-			</form></center>
-		</div>
-		<div>
+    <div id="login-box">
+        <div class="left-box">
+            <h2>Selamat Datang di Admin Hotel Reservation</h2>
+            <h3>LOGIN As ADMIN</h3>
+            <?php echo "<p style='background-color: red; color: white;'>$message</p>"; ?>
+            <form action="val-login.php" method="POST">
+                <input type="text" name="username" placeholder="Username" />
+                <input type="password" name="password" placeholder="Password" />
+                <center><input type="submit" name="login button" value="LOGIN" />
+            </form>
+            </center>
+        </div>
+    </div>
 </body>
 
 </html>
