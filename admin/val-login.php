@@ -3,7 +3,6 @@ session_start();
 
 include '../db_connect.php';
  
-// menangkap data yang dikirim dari form
 $username = $_POST['username'];
 $password = md5($_POST['password']);
  
@@ -16,6 +15,6 @@ if($cek > 0){
 	$_SESSION['status'] = "login";
 	header("location:/admin/index.php");
 }else{
-	header("location:/admin/index.php?pesan=gagal");
+	header("location:/admin/login.php?pesan=gagal");
 }
 ?>
