@@ -1,5 +1,5 @@
 <?php 
-$koneksi = mysqli_connect("db4free.net:3306","ahihihi69","Ccc12345","finalpwl69");
+$koneksi = mysqli_connect("localhost","root","","finalpwl");
 
 // Check connection
 if (mysqli_connect_errno()){

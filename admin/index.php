@@ -14,7 +14,7 @@
     <?php
     session_start();
     if ($_SESSION['status'] != "login") {
-        header("location:../index.php?pesan=belum_login");
+        header("location:/admin/login.php?pesan=belum_login");
     }
     ?>
 
@@ -23,7 +23,7 @@
     <br />
     <br />
 
-    <a href="">LOGOUT</a>
+    <a href="logout.php">LOGOUT</a>
 
 
 </body>

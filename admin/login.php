@@ -18,15 +18,23 @@ if (isset($_GET['pesan'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/asset/styleloginsignup.css">
     <title>login</title>
 </head>
 
 <body>
-    <form action="val-login.php" method="post">
-        <input type="text" name="username">
-        <input type="password" name="password">
-        <input type="submit" value="Submit">
-    </form>
+	<div id="login-box">
+
+		<div class="left-box">
+			<h2>Selamat Datang di Admin Hotel Reservation</h2>
+			<h3>LOGIN As ADMIN</h3>
+			<form action="val-login.php" method="POST">
+				<input type="text" name="username" placeholder="Username" />
+				<input type="password" name="password" placeholder="Password" />
+				<center><input type="submit" name="login button" value="LOGIN" />
+			</form></center>
+		</div>
+		<div>
 </body>
 
 </html>
