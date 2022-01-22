@@ -1,3 +1,49 @@
+<?php 
+error_reporting(0);
+
+include 'db_connect.php';
+ 
+session_start();
+ 
+if (isset($_SESSION['username'])) {
+    header("Location: index.php");
+}
+ 
+if (isset($_POST['submit'])) {
+    $email = $_POST['email'];
+	$namalengkap = $_POST['namalengkap'];
+	$nohp = $_POST['nohp'];
+    $password = hash('sha256',$_POST['password']);
+    $cpassword = hash('sha256',$_POST['cpassword']);
+ 
+    if ($password == $cpassword) {
+        $sql = "SELECT * FROM pengguna WHERE email='$email'";
+        $result = mysqli_query($koneksi, $sql);
+        if (!$result->num_rows > 0) {
+            $sql = "INSERT INTO pengguna (id, email, namalengkap, nohp, password)
+                    VALUES ('','$email', '$namalengkap', '$nohp', '$password')";
+            $result = mysqli_query($koneksi, $sql);
+            if ($result) {
+                echo "<script>alert('Selamat, registrasi berhasil!')</script>";
+                $email = "";
+				$namalengkap = "";
+				$nohp = "";
+                $_POST['password'] = "";
+                $_POST['cpassword'] = "";
+            } else {
+                echo "<script>alert('Woops! Terjadi kesalahan.')</script>";
+            }
+        } else {
+            echo "<script>alert('Woops! Email Sudah Terdaftar.')</script>";
+        }
+         
+    } else {
+        echo "<script>alert('Password Tidak Sesuai')</script>";
+    }
+}
+ 
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -31,27 +77,28 @@
 									</p>
 								</div>
 							</div>
-							<form action="#" class="signin-form">
+							<form action="" method="POST" class="signin-form">
 								<div class="form-group mt-3">
-									<input type="email" class="form-control" required placeholder="Email">
+									<input id="email" name="email" type="email" class="form-control" required placeholder="Email">
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control" required placeholder="Nama Lengkap">
+									<input id="namalengkap" name="namalengkap" type="text" class="form-control" required placeholder="Nama Lengkap">
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control" required placeholder="Nomor Handphone">
+									<input id="nohp" name="nohp" type="text" class="form-control" required placeholder="Nomor Handphone">
 								</div>
 								<div class="form-group">
-									<input id="password-field" type="password" class="form-control" required placeholder="Password">
+									<input id="password" name="password" type="password" class="form-control" required placeholder="Password">
 									<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 								</div>
 								<div class="form-group">
-									<input id="password-field" type="password" class="form-control" required placeholder="Konfirmasi Password">
+									<input id="cpassword" name="cpassword" type="password" class="form-control" required placeholder="Konfirmasi Password">
 									<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 								</div>
 								<div class="form-group">
-									<button type="submit" class="form-control btn btn-primary rounded submit px-3">Sign
-										In</button>
+									<button name="submit" id="submit" type="submit" class="form-control btn btn-primary rounded submit px-3">
+									Sign Up
+									</button>
 								</div>
 							</form>
 							<p class="text-center">Sudah memiliki akun? <a data-toggle="tab" href="login.php">Sign In</a></p>

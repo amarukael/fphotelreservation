@@ -1,3 +1,5 @@
+<?php $page="home" ?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -130,12 +132,10 @@
               <h3><a href="#">Grand Deluxe Room</a></h3>
               <div class="post-meta">
                 <ul>
-                  <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
-                  <li><i class="icon-user2"></i> 3 Guests</li>
+                  <li><span class="review-rate">5.0</span> <i class="icon-star"></i> </li>
+                  
                 </ul>
               </div>
-              <p>Deskripsi</p>
-              <p><a href="#" class="btn btn-primary">Book now from $109</a></p>
             </div>
           </div>
         </div>
@@ -153,12 +153,10 @@
               <h3><a href="#">Ultra Superior Room</a></h3>
               <div class="post-meta">
                 <ul>
-                  <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
-                  <li><i class="icon-user2"></i> 3 Guests</li>
+                  <li><span class="review-rate">4.5</span> <i class="icon-star"></i> </li>
+                  
                 </ul>
               </div>
-              <p>Deskripsi</p>
-              <p><a href="#" class="btn btn-primary">Book now from $109</a></p>
             </div>
           </div>
         </div>
@@ -181,59 +179,14 @@
           <div class="owl-carousel owl-carousel-carousel">
             <div class="item">
               <div class="probootstrap-room">
-                <a href="#"><img src="asset/img/img_1.jpg" alt="" class="img-responsive"></a>
-                <div class="text">
-                  <h3>Classic Room</h3>
-                  <p>Starting from <strong>$29.00/Night</strong></p>
-                  <div class="post-meta">
-                    <ul>
-                      <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
-                      <li><i class="icon-user2"></i> 3 Guests</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="probootstrap-room">
-                <a href="#"><img src="asset/img/img_2.jpg" alt="" class="img-responsive"></a>
-                <div class="text">
-                  <h3>Grand Deluxe Room</h3>
-                  <p>Starting from <strong>$32.00/Night</strong></p>
-                  <div class="post-meta">
-                    <ul>
-                      <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
-                      <li><i class="icon-user2"></i> 3 Guests</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="probootstrap-room">
-                <a href="#"><img src="asset/img/img_3.jpg" alt="" class="img-responsive"></a>
-                <div class="text">
-                  <h3>Ultra Superior Room</h3>
-                  <p>Starting from <strong>$42.00/Night</strong></p>
-                  <div class="post-meta">
-                    <ul>
-                      <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
-                      <li><i class="icon-user2"></i> 3 Guests</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="probootstrap-room">
                 <a href="#"><img src="asset/img/img_4.jpg" alt="" class="img-responsive"></a>
                 <div class="text">
                   <h3>Classic Room</h3>
-                  <p>Starting from <strong>$29.00/Night</strong></p>
+                  <p>Mulai dari <strong>Rp.200.000/Malam</strong></p>
                   <div class="post-meta">
                     <ul>
-                      <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
-                      <li><i class="icon-user2"></i> 3 Guests</li>
+                      <li><span class="review-rate">4.2</span> <i class="icon-star"></i> </li>
+
                     </ul>
                   </div>
                 </div>
@@ -243,12 +196,12 @@
               <div class="probootstrap-room">
                 <a href="#"><img src="asset/img/img_5.jpg" alt="" class="img-responsive"></a>
                 <div class="text">
-                  <h3>Grand Deluxe Room</h3>
-                  <p>Starting from <strong>$32.00/Night</strong></p>
+                  <h3>Ultra Superior Room</h3>
+                  <p>Mulai dari <strong>Rp.400.000/Malam</strong></p>
                   <div class="post-meta">
                     <ul>
-                      <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
-                      <li><i class="icon-user2"></i> 3 Guests</li>
+                      <li><span class="review-rate">4.5</span> <i class="icon-star"></i> </li>
+
                     </ul>
                   </div>
                 </div>
@@ -258,27 +211,11 @@
               <div class="probootstrap-room">
                 <a href="#"><img src="asset/img/img_6.jpg" alt="" class="img-responsive"></a>
                 <div class="text">
-                  <h3>Ultra Superior Room</h3>
-                  <p>Starting from <strong>$42.00/Night</strong></p>
+                  <h3>Grand Deluxe Room</h3>
+                  <p>Mulai dari <strong>Rp.600.000/Malam</strong></p>
                   <div class="post-meta">
                     <ul>
-                      <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
-                      <li><i class="icon-user2"></i> 3 Guests</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="probootstrap-room">
-                <a href="#"><img src="asset/img/img_7.jpg" alt="" class="img-responsive"></a>
-                <div class="text">
-                  <h3>Ultra Superior Room</h3>
-                  <p>Starting from <strong>$42.00/Night</strong></p>
-                  <div class="post-meta">
-                    <ul>
-                      <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
-                      <li><i class="icon-user2"></i> 3 Guests</li>
+                      <li><span class="review-rate">5.0</span> <i class="icon-star"></i> </li>
                     </ul>
                   </div>
                 </div>

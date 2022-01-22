@@ -1,3 +1,11 @@
+<?php 
+include 'db_connect.php';
+session_start();
+if (isset($_SESSION['status'])) {
+    header("location:akun.php");
+}
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -31,12 +39,12 @@
 									</p>
 								</div>
 							</div>
-							<form action="#" class="signin-form">
+							<form action="do_login.php" method="POST" class="signin-form">
 								<div class="form-group mt-3">
-									<input type="email" class="form-control" required placeholder="Email">
+									<input id="email" name="email" type="email" class="form-control" required placeholder="Email">
 								</div>
 								<div class="form-group">
-									<input id="password-field" type="password" class="form-control" required placeholder="Password">
+									<input name="password" id="password" id="password-field" type="password" class="form-control" required placeholder="Password">
 									<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 								</div>
 								<div class="form-group">

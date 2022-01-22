@@ -1,3 +1,5 @@
+<?php $page="about" ?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -17,12 +19,12 @@
 
   <section class="probootstrap-slider flexslider probootstrap-inner">
     <ul class="slides">
-       <li style="background-image: url(img/slider_1.jpg);" class="overlay">
+       <li style="background-image: url(asset/img/slider_1.jpg);" class="overlay">
           <div class="container">
             <div class="row">
               <div class="col-md-10 col-md-offset-1">
                 <div class="probootstrap-slider-text text-center">
-                  <p><img src="img/curve_white.svg" class="seperator probootstrap-animate" ></p>
+                  <p><img src="asset/img/curve_white.svg" class="seperator probootstrap-animate" ></p>
                   <h1 class="probootstrap-heading probootstrap-animate">Tentang Amikom Hotel</h1>
                   <div class="probootstrap-animate probootstrap-sub-wrap">Deskripsi</div>
                 </div>
@@ -38,7 +40,7 @@
       <div class="row mb30">
         <div class="col-md-12">
           <figure>
-          <img src="img/slider_1.jpg"  class="img-responsive">
+          <img src="asset/img/slider_1.jpg"  class="img-responsive">
           </figure>
         </div>
       </div>
@@ -101,7 +103,7 @@
       </div>
     </div>
   </section>
-
+  
   <?php include 'footer.php'; ?>
 
   <script src="asset/js/scripts.min.js"></script>
