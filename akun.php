@@ -57,7 +57,7 @@ $nama = $_SESSION['nama'];
     </ul>
   </section>
 
-  <a href="logout.php"> amaszing</a>
+  <a class="btn btn-primary" href="logout.php" style="margin-top: 20px; margin-bottom: 20px; margin-left: 40px"> Logout</a>
 
   <section class="probootstrap-half">
     <div class="image" style="background-image: url(asset/img/slider_2.jpg);"></div>
