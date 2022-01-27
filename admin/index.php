@@ -20,6 +20,9 @@ if ($_SESSION['status'] != "login") {
         <br><br><br><br>
         <h2 class="fw-bold">Selamat datang, <?php echo $_SESSION['username']; ?>!</h2>
         <h4>apa yang ingin anda lakukan?</h4>
+
+        <a class="btn btn-primary" style="float:right;" href="tambahkaryawan.php">Tambah Karyawan</a>
+
     </div>
     <div style="text-align: center;" class="position-absolute top-50 start-50 translate-middle">
         <a href="/admin/karyawan/index.php"><button type="button" class="btn btn-primary fw-bold">Edit data karyawan</button></a>
